@@ -59,7 +59,7 @@ tblproperties("hbase.table.name" = "h2h")
 -- dao--->put---->coprocessor---->table & --->preput 粉丝表
 -- preput方法在put之前执行  没加拦截器
 
-# 协处理器写法
+# 协处理器写法   打完包将协处理器加上去  协处理器追加到表上
 -- extends baseRegionOBserver
 -- prePut postPut preDelete 定义它的方法
 
